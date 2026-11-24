@@ -12,7 +12,21 @@ shuning uchun kod ichida hech narsa "sehr" bilan ishlamaydi — hammasi ko'rinib
    Harf darajasida ishlaydigan model o'zbekcha ismlardan o'rganib, yangi ismlar o'ylab topadi.
    Overfitting (yodlab olish) nima ekanini ham ko'rsatadi.
 
-Ishga tushirish: `python3 ai-darslar/01_neyron_tarmoq.py` (yoki `02_...`).
+Ishga tushirish: `python3 ai-darslar/01_neyron_tarmoq.py` (yoki `02_...`). Kerakli kutubxona: `pip install numpy`.
+
+2-dars o'qitilgan modelni `ai-darslar/model.npz` fayliga saqlaydi va keyingi safar qayta o'qitmasdan
+yuklaydi. `--qayta` bilan qaytadan o'qitish, `--soni 50` bilan ko'proq ism yozdirish mumkin.
+
+### Google Colab'da ishlatish
+
+```python
+!git clone https://github.com/samadbekxolmamatov2009/good_work
+%cd good_work
+!python ai-darslar/02_til_modeli.py --soni 10
+```
+
+Colab sessiyasi yopilganda `model.npz` ham o'chadi (repo'dagi nusxasidan tashqari). Doimiy saqlash uchun
+Google Drive ulang va `--fayl /content/drive/MyDrive/model.npz` bering.
 
 ## Keyingi darslar (rejada)
 
